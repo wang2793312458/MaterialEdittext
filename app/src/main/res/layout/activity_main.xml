@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.materialedittext.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="#ffffff"
+        tools:context="com.cxmscb.cxm.newtest.MainActivity">
+
+        <com.example.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:maxLength = "12"
+            app:labelText="用户名"
+            app:labelColor="#18b4ed"
+            app:preLineColor="#18b4ed"
+            app:overlengthColor="@android:color/holo_red_light"
+            android:hint="用户名"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="0dp"
+            android:textSize="18sp"/>
+
+        <com.example.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:maxLength = "12"
+            app:labelText="密码"
+            app:labelColor="#18b4ed"
+            app:preLineColor="#18b4ed"
+            app:overlengthColor="@android:color/holo_red_light"
+            android:hint="密码"
+            android:singleLine="true"
+            android:password="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="0dp"
+            android:textSize="18sp"/>
+
+        <com.example.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:maxLength = "-1"
+            app:labelText="无限制输入"
+            app:labelColor="#e2d66f"
+            app:preLineColor="#e2d66f"
+            android:hint="无限制输入"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="0dp"
+            android:textSize="18sp"/>
+
+
+
+        <com.example.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/avatar"
+            android:drawablePadding="4dp"
+            app:maxLength = "12"
+            app:labelText="用户名"
+            app:labelColor="#18b4ed"
+            app:preLineColor="#18b4ed"
+            app:overlengthColor="@android:color/holo_red_light"
+            android:hint="用户名"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="0dp"
+            android:textSize="18sp"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
